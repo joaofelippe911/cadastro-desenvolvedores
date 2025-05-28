@@ -25,23 +25,15 @@ services:
       DB_PORT: 5432
       DB_USERNAME: postgres
       DB_PASSWORD: admin
-      DB_NAME: cadastro-devs
-    volumes:
-      - ./backend:/app
-    working_dir: /app
-    command: npm run start:dev
+      DB_NAME: cadastro-desenvolvedores
 
   frontend:
     build: ./frontend
     container_name: cadastro-desenvolvedores-frontend
     ports:
-      - "5173:5173"
+      - "5173:80"
     depends_on:
       - backend
-    volumes:
-      - ./frontend:/app
-    working_dir: /app
-    command: npm run dev
 
 volumes:
   postgres-data:
