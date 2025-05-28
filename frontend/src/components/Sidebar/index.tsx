@@ -30,6 +30,7 @@ export function Sidebar() {
       {
         SIDEBAR_ITEMS.map((item) => (
           <NavLink
+            key={item.link}
             to={item.link}
           >
             {item.title}

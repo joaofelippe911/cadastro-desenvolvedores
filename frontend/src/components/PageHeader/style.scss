@@ -1,0 +1,31 @@
+.list-page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 48px;
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  a {
+    background-color: transparent;
+    outline: 0;
+    border: 1px solid #38598b;
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: #38598b;
+    transition: all 0.2s ease-in;
+    font-size: 20px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #38598b;
+      color: #FFFFFF;
+    }
+  }
+}
